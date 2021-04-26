@@ -4,7 +4,12 @@
 	prefix="c" %>    
 	
 <style>
-div { margin: 20px auto;}
+div#header { margin: 20px auto;
+font-size:1.0em;
+text-align: center;
+width:400px;
+
+}
 
 </style>
 
@@ -13,7 +18,8 @@ div { margin: 20px auto;}
 <!--  로그인 x 일떄 회원가입,로그인
 로그아웃 + 내 블로그-->
 <div>
-<img  onclick="" src="<c:url value="/assets/image/spring.png"/>"/>
+<a href="<c:url value="/main"/>">
+<img src="<c:url value="/assets/image/spring.png"/>"> </a>
 </div>
 <h1>JBlog</h1>
 <ul>
@@ -25,7 +31,7 @@ div { margin: 20px auto;}
 		<c:otherwise> <!--  로그인 한 상태 -->
 			<li><a href="<c:url value="/users/logout"/>">로그아웃</a></li>
 			<li> ${authUser.id }님 반갑습니다 </li>
-			<li><a href="<c:url value="블로그주소"/>">내 블로그</a>
+			<li><a href="<c:url value="/{id}"/>">내 블로그</a>
 			</c:otherwise>
 			</c:choose>
 			

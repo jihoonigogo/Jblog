@@ -1,0 +1,9 @@
+@charset "UTF-8";
+div#container { margin: 20px auto;
+font-size:1em;
+text-align: center;
+width:400px;
+}
+body{
+	background-color: sky;
+}

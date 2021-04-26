@@ -7,6 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>JBlog main page</title>
+<link rel="stylesheet"
+	  href="<c:url value="/assets/css/home.css" />" />
 </head>
 <body>
 		<div id="container">

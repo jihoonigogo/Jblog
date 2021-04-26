@@ -24,4 +24,6 @@ public class BlogDaoImpl implements BlogDao {
 		return insertedCount;
 	}
 
+	
+	
 }
